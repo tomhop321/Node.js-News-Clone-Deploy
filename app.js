@@ -11,10 +11,20 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/js', express.static(__dirname + 'public/js'))
 
 // Templating Engine
+
+
+
 app.set('views', './src/views')
 app.set('view engine', 'ejs')
 
 app.use(bodyParser.urlencoded({ extended: true }))
+
+app.get('/xd', (req, res) => {
+    res.send("hello nodedddddddd")
+    console.log(4444)
+
+} )
+
 
 // Routes
 const newsRouter = require('./src/routes/news')
