@@ -20,7 +20,7 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/xd', (req, res) => {
-    res.render("index")
+    res.render("./views/index")
     console.log(4444)
 
 } )
